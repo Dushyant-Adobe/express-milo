@@ -442,7 +442,6 @@ const listenAlloy = () => {
 
   await loadArea();
 
-  // Remove promotional banners (Black Friday offers, sticky promo bars, etc.)
   document.querySelectorAll('.sticky-promo-bar, .ribbon-banner').forEach((banner) => {
     banner.remove();
   });

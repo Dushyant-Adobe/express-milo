@@ -367,7 +367,6 @@ async function updateNonBladeContent(main) {
     browseByCat.remove();
   }
 
-  // Remove promotional banners (Black Friday offers, sticky promo bars, etc.)
   const stickyPromoBar = main.querySelector('.sticky-promo-bar');
   const ribbonBanner = main.querySelector('.ribbon-banner');
   
