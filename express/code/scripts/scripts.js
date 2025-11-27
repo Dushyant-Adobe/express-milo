@@ -442,6 +442,11 @@ const listenAlloy = () => {
 
   await loadArea();
 
+  // Remove promotional banners (Black Friday offers, sticky promo bars, etc.)
+  document.querySelectorAll('.sticky-promo-bar, .ribbon-banner').forEach((banner) => {
+    banner.remove();
+  });
+
   const { fixIcons } = await import('./utils.js');
   document.querySelectorAll('.section>.text').forEach((block) => fixIcons(block));
 

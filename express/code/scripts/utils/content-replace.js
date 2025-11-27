@@ -366,6 +366,18 @@ async function updateNonBladeContent(main) {
   if (browseByCat) {
     browseByCat.remove();
   }
+
+  // Remove promotional banners (Black Friday offers, sticky promo bars, etc.)
+  const stickyPromoBar = main.querySelector('.sticky-promo-bar');
+  const ribbonBanner = main.querySelector('.ribbon-banner');
+  
+  if (stickyPromoBar) {
+    stickyPromoBar.remove();
+  }
+  
+  if (ribbonBanner) {
+    ribbonBanner.remove();
+  }
 }
 
 async function validatePage() {
