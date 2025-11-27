@@ -363,7 +363,7 @@ async function updateNonBladeContent(main) {
     }
   }
 
-  if (browseByCat && !['yes', 'true', 'on', 'Y'].includes(getMetadata('show-browse-by-category'))) {
+  if (browseByCat) {
     browseByCat.remove();
   }
 }
